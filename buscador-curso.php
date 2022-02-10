@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 
 require 'vendor/autoload.php';
@@ -15,9 +16,11 @@ $cursos = $buscador->buscar('/cursos-online-programacao/php');
 $cursos2 = $buscador->buscar('/cursos-online-programacao/java');
 
 foreach ($cursos as $curso){
-    echo $curso . PHP_EOL;
+    echo "Cursos PHP" . PHP_EOL;
+    exibeMensagem($curso);
 }
 
 foreach ($cursos2 as $curso) {
-    echo $curso . PHP_EOL;
+    echo "Cursos JAVA" . PHP_EOL;
+    exibeMensagem($curso);
 }

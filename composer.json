@@ -3,6 +3,9 @@
     "description": "Projeto que busca cursos no site da Alura",
     "type": "library",
     "autoload": {
+        "files": [
+            "functions.php"
+        ],
         "psr-4": {
             "Alura\\BuscadorDeCursos\\": "src/"
         }
